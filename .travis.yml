@@ -19,6 +19,7 @@ env:
   - DJANGO=1.7 DB=postgres
   - DJANGO=1.7 DB=mysql
   - DJANGO=1.8 DB=mysql
+  - DJANGO=1.9 DB=mysql
 matrix:
   exclude:
     - python: "3.2"
