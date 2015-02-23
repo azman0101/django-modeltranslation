@@ -14,11 +14,11 @@ may they use translations or not, and you never have to touch the original
 model class.
 
 
-.. image:: http://img.shields.io/travis/deschler/django-modeltranslation/master.png?style=flat
-    :target: https://travis-ci.org/deschler/django-modeltranslation
+.. image:: http://img.shields.io/travis/azman0101/django-modeltranslation/master.png?style=flat
+    :target: https://travis-ci.org/azman0101/django-modeltranslation
 
-.. image:: http://img.shields.io/coveralls/deschler/django-modeltranslation.png?style=flat
-    :target: https://coveralls.io/r/deschler/django-modeltranslation
+.. image:: http://img.shields.io/coveralls/azman0101/django-modeltranslation.png?style=flat
+    :target: https://coveralls.io/r/azman0101/django-modeltranslation
 
 .. image:: https://pypip.in/v/django-modeltranslation/badge.png?style=flat
     :target: https://pypi.python.org/pypi/django-modeltranslation/
@@ -46,7 +46,7 @@ Features
 
 Project Home
 ------------
-https://github.com/deschler/django-modeltranslation
+https://github.com/azman0101/django-modeltranslation
 
 Documentation
 -------------
