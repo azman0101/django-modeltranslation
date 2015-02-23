@@ -11,7 +11,7 @@ import django
 from django.db import models
 from django.db.models import FieldDoesNotExist
 if django.VERSION <= (1, 7):
-    from django.db.models.fields.related import RelatedField, RelatedObject 
+    from django.db.models.fields.related import RelatedField, RelatedObject
 else:
     from django.db.models.fields.related import RelatedField, ForeignObjectRel as RelatedObject
 
