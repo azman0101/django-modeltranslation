@@ -7,6 +7,7 @@ https://github.com/zmathew/django-linguo
 """
 import itertools
 
+import django
 from django.db import models
 from django.db.models import FieldDoesNotExist
 if django.VERSION <= (1, 7):
