@@ -9,7 +9,7 @@ import itertools
 
 from django.db import models
 from django.db.models import FieldDoesNotExist
-from django.db.models.fields.related import RelatedField, RelatedObject
+from django.db.models.fields.related import RelatedField, ForeignObjectRel
 from django.db.models.sql.where import Constraint
 from django.utils.six import moves
 from django.utils.tree import Node
@@ -126,7 +126,7 @@ def get_fields_to_translatable_models(model):
                 if get_translatable_fields_for_model(field_object.related.parent_model) is not None:
                     results.append((field_name, field_object.related.parent_model))
             # Reverse relationship
-            if isinstance(field_object, RelatedObject):
+            if isinstance(field_object, ForeignObjectRel):
                 if get_translatable_fields_for_model(field_object.model) is not None:
                     results.append((field_name, field_object.model))
         _F2TM_CACHE[model] = dict(results)
