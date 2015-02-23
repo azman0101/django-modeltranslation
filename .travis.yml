@@ -68,7 +68,7 @@ matrix:
 before_install:
   - pip install --upgrade pip
   - pip install -q flake8 --use-mirrors
-  - pip install -q pep8==1.6.0 --use-mirrors
+  - pip install -q pep8==1.5.7 --use-mirrors
   - python -c "import pep8; print(pep8.__version__)"
   - PYFLAKES_NODOCTEST=1 flake8 modeltranslation
 before_script:
