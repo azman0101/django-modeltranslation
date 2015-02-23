@@ -66,6 +66,7 @@ matrix:
     - python: "3.4"
       env: DJANGO=1.7 DB=mysql
 before_install:
+  - pip install --upgrade pip
   - pip install -q flake8 --use-mirrors
   - PYFLAKES_NODOCTEST=1 flake8 modeltranslation
 before_script:
