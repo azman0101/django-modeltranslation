@@ -128,8 +128,8 @@ def get_fields_to_translatable_models(model):
             field_object, modelclass, direct, m2m = model._meta.get_field_by_name(field_name)
             # Direct relationship
             if direct and isinstance(field_object, RelatedField):
-                if get_translatable_fields_for_model(field_object.related.model) is not None:
-                    results.append((field_name, field_object.related.model))
+                if get_translatable_fields_for_model(field_object.related.parent_model) is not None:
+                    results.append((field_name, field_object.related.parent_model))
             # Reverse relationship
             if isinstance(field_object, RelatedObject):
                 if get_translatable_fields_for_model(field_object.model) is not None:
