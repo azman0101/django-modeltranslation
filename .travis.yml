@@ -79,6 +79,7 @@ install:
   - if [[ $DB == postgres ]]; then pip install -q psycopg2 --use-mirrors; fi
   - pip install -q Pillow --use-mirrors
   - IDJANGO=$(./travis.py $DJANGO)
+  - echo $IDJANGO
   - pip install -q $IDJANGO
   - pip install -e . --use-mirrors
   - pip install -q coveralls --use-mirrors
