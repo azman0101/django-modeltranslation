@@ -5,7 +5,7 @@ version = sys.argv[1]
 if version.startswith('http'):
     print(version)
 else:
-    if version == '1.8a1':
+    if '1.8' in version:
         print('Django>=%s' % version)
     else:
         next_version = float(version) + 0.1
